@@ -607,7 +607,7 @@ const toIndexHtmlFile = (config, pathToMainJs) => {
     ? [toHtmlTag('title', {}, config.app.html.title)]
     : []
   let metaTags = toSelfClosingHtmlTags('meta', [
-    { name: 'elm-land', content: '0.20.1' }
+    { name: 'elm-land', content: '0.21.0-buddhilw.1' }
   ].concat(attempt(_ => config.app.html.meta)))
   let linkTags = toSelfClosingHtmlTags('link', attempt(_ => config.app.html.link))
   let scriptTags = toHtmlTags('script', attempt(_ => config.app.html.script))
